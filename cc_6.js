@@ -22,3 +22,18 @@ class Manager extends Employee {
 let employeeOne = new Employee("Sohil Desai", "Sales");
 let employeeTwo = new Employee("Olivia Martinez", "Information Technology");
 let managerOne = new Manager("Ethan Wilson", "Operations", 6);
+class Company {
+  constructor() {
+    this.employees = [];
+  }
+
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+
+  listEmployees() {
+    for (let employee of this.employees) {
+      console.log(employee.describe());
+    }
+  }
+}
