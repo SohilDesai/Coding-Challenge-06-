@@ -37,3 +37,10 @@ class Company {
     }
   }
 }
+let company = new Company();
+
+company.addEmployee(employeeOne);
+company.addEmployee(employeeTwo);
+company.addEmployee(managerOne);
+
+company.listEmployees();
